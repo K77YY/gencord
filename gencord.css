@@ -5,15 +5,7 @@
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css');
 
 :root {
-  --disable-animations: 2s channel-unread infinite;
-  --user-buttons-spacing: 8px;
-  --user-buttons-color: #61538d;
-  --colored-emoji: grayscale(1%);
   --unread-color: #7289da;
-  /*--mention-color: #6e56af;
-  --mention-color-bar: #61538d;
-  --mention-color-background: #0d0d0d;
-  --mention-color-hover: #6e56af0c;*/
   --chat-buttons: #61538d;
   --spotify-color: #61538d;
   --online: #43b581;
@@ -23,36 +15,30 @@
   --streaming: #593695;
   --playing: #7289da;
   --listening: #1db653;
-  --role-circle: 0px;
-  --discord-logo: none;
   
-  /* tui customization */
-	--font: 'DM Mono'; /* UI font name. it must be installed on your system. */
-	letter-spacing: -0.05ch; /* decreases letter spacing for better readability. */
-	font-weight: 300; /* UI font weight. */
-	--label-font-weight: 500; /* font weight for panel labels. */
-	--pad: 16px; /* padding between panels. */
+  --disable-animations: 2s channel-unread infinite;
+  --user-buttons-spacing: 8px;
+
+	--font: 'DM Mono';
+	letter-spacing: -0.05ch;
+	font-weight: 300; 
+	--label-font-weight: 500; 
+
+	--pad:15px; 
 	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
-	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
-	
-  /* state modifiers */
-	--hover: oklch(54% 0 0 / 0.1); /* color of hovered elements. */
-	--active: oklch(54% 0 0 / 0.2); /* color of elements when clicked. */
-	--selected: var(--active); /* color of selected elements. */
+	--panel-roundness: 0px;
 
-	/* borders */
-	--border-width: 2px; /* panel border thickness. */
-	--border-color: var(--bg-3); /* panel border color. */
-	--border-hover-color: var(--bg-3); /* panel border color when hovered. // (--acc-0 for mark) */
-	--border-transition: 0.2s ease; /* panel border transition. */
+	--border-width: 2px; 
+	--border-color: var(--bg-3); 
+	--border-hover-color: var(--bg-3); /* (--acc-0 for mark) */
+	--border-transition: 0.2s ease; 
 
-	/* mention/ping and message colors */
-	--mention-txt: var(--acc-0); /* color of mention text. */
-	--mention-bg: color-mix(in oklch, var(--bg-1), transparent 90%); /* background highlight of mention text. */
-  --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); /* overlay color of messages that mention you. */
-	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); /* overlay color of messages that mention you when hovered. */
-	--reply-overlay: var(--active); /* overlay color of message you are replying to. */
-	--reply-hover-overlay: var(--hover); /* overlay color of message you are replying to when hovered. */
+	--mention-txt: var(--acc-0); 
+	--mention-bg: color-mix(in oklch, var(--bg-1), transparent 90%);
+  --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); 
+	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); 
+	--reply-overlay: var(--active);
+	--reply-hover-overlay: var(--hover);
 }
 
 .theme-dark {
