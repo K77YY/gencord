@@ -83,17 +83,3 @@
   --header-secondary: #61538d;
   --text-normal: #61538d;
 }
-
-.theme-light {
-  --background-primary: #0d0d0d;
-  --background-secondary: #0d0d0d;
-  --background-secondary-alt: #0d0d0d;
-  --background-tertiary: #0d0d0d;
-  --background-accent: #7289da;
-  --background-modifier-hover: #0d0d0d;
-  --background-modifier-active: #0d0d0d;
-  --modal-background: var(--background-primary);
-  --header-primary: #a9b1d6;
-  --header-secondary: #a9b1d6;
-  --text-normal: #61538d;
-}
