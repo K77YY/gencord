@@ -3,6 +3,7 @@
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css');
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css');
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css');
+
 :root {
   --disable-animations: 2s channel-unread infinite;
   --user-buttons-spacing: 8px;
@@ -53,6 +54,7 @@
 	--reply-overlay: var(--active); /* overlay color of message you are replying to. */
 	--reply-hover-overlay: var(--hover); /* overlay color of message you are replying to when hovered. */
 }
+
 .theme-dark {
   --background-primary: #0d0d0d;
   --background-secondary: #0d0d0d;
@@ -81,6 +83,7 @@
   --header-secondary: #61538d;
   --text-normal: #61538d;
 }
+
 .theme-light {
   --background-primary: #0d0d0d;
   --background-secondary: #0d0d0d;
