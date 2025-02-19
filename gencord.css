@@ -24,13 +24,13 @@
 	font-weight: 300; 
 	--label-font-weight: 500; 
 
-	--pad:15px; 
+	--pad:10px; /*def 15*/
 	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
 	--panel-roundness: 0px;
 
-	--border-width: 2px; 
+	--border-width: 1px; /*def 2*/
 	--border-color: var(--bg-3); 
-	--border-hover-color: var(--bg-3); /* (--acc-0 for mark) */
+	--border-hover-color: var(--bg-3); /* (--acc-0 for focus visuals) */
 	--border-transition: 0.2s ease; 
 
 	--mention-txt: var(--acc-0); 
