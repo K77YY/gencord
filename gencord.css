@@ -24,11 +24,11 @@
 	font-weight: 300; 
 	--label-font-weight: 500; 
 
-	--pad:10px; /*def 15*/
+	--pad:10px; /*sane def 15*/
 	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
 	--panel-roundness: 0px;
 
-	--border-width: 1px; /*def 2*/
+	--border-width: 1px; /*sane def 2*/
 	--border-color: var(--bg-3); 
 	--border-hover-color: var(--bg-3); /* (--acc-0 for focus visuals) */
 	--border-transition: 0.2s ease; 
