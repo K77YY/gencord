@@ -85,6 +85,8 @@ div[role="tablist"] {
   > div[class*="premiumTab_"] + div + div + div { display: var(--display-settings-gift-inventory-tab); }
   > div[class*="premiumTab_"] + div + div + div + div { display: var(--display-settings-billing-tab); }
 }
+[aria-label="Connections"]{ display: none; }
+[aria-label="Clips"]{ display: none; }
 [class="container__8279f"]{ display: none; }
 [class="upsellContainer__0b69f upsellContainerShadow__0b69f upsellContainerFloating__0b69f floatingNitroUpsell__39749"]{ display: none; }
 [class="premiumBackground__65c15 background__65c15"]{ display: none; }
@@ -95,6 +97,16 @@ div[role="tablist"] {
 [aria-label="Activity Privacy"]+div +div +div{ display: none; }
 [aria-label="Activity Privacy"]+div +div +div +div{ display: none; }
 [class="socialLinks__7df54"]{ display: none; } //socials
+[class="h5_b717a1 eyebrow_b717a1 defaultMarginh5_b717a1"]{ display: none; }
+/*vc adds*/
+[class="defaultColor__4bd52 heading-lg/semibold_cf4812 vc-m-bottom-16"]{ display: none; }
+[class="vc-special-card vc-special-card-special cardPrimary__73069 card__73069"]{ display: none; }
+[class="vc-special-card-flex"]{ display: none; }
+[class="h5_b717a1 eyebrow_b717a1 vc-special-title"]{ display: none; }
+[class="colorStandard_c9946a size14_a4e6b9 default_ddd181 formText_ddd181 vc-special-subtitle modeDefault_ddd181"]{ display: none; }
+[class="colorStandard_c9946a size14_a4e6b9 default_ddd181 formText_ddd181 vc-special-text modeDefault_ddd181"]{ display: none; }
+[class="button__201d5 lookFilled__201d5 colorWhite__201d5 sizeMedium__201d5 grow__201d5"]{ display: none; }
+[class="vc-special-image-container"]{ display: none; }
 /*chat buttons*/
 button[aria-label="Open GIF picker"] { display: none; }
 button[aria-label="Send a gift"] { display: none; }
@@ -118,7 +130,6 @@ img.emoji{ opacity: 100; }
 [aria-label="Inbox"]{ display: none; }
 [aria-label="Help"]{ display: none; }
 [class="wrapper__44b0c avatar_f75fb0"]{ display: none; }
-/*loading*/
 
 .theme-dark {
   --background-primary: #0d0d0d;
