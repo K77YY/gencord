@@ -5,41 +5,120 @@
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css');
 
 :root {
-  --unread-color: #7289da;
-  --chat-buttons: #61538d;
-  --spotify-color: #61538d;
-  --online: #43b581;
-  --iddle: #faa61a;
-  --dnd: #f04747;
-  --offline: #747f8d;
-  --streaming: #593695;
-  --playing: #7289da;
-  --listening: #1db653;
+    --unread-color: #7289da;
+    --chat-buttons: #61538d;
+    --spotify-color: #61538d;
+    --online: #43b581;
+    --iddle: #faa61a;
+    --dnd: #f04747;
+    --offline: #747f8d;
+    --streaming: #593695;
+    --playing: #7289da;
+    --listening: #1db653;
   
-  --disable-animations: 2s channel-unread infinite;
-  --user-buttons-spacing: 8px;
+    --disable-animations: 2s channel-unread infinite;
+    --user-buttons-spacing: 8px;
 
-	--font: 'DM Mono';
+    --font: 'DM Mono';
 	letter-spacing: -0.05ch;
-	font-weight: 300; 
-	--label-font-weight: 500; 
+	font-weight: 300; 	
+    --label-font-weight: 500; 
 
-	--pad:10px; /*sane def 15*/
-	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
-	--panel-roundness: 0px;
+    --pad:10px; /*sane def 15*/
+    --txt-pad: 10px; /*padding inside panels to prevent labels from clipping*/
+    --panel-roundness: 0px;
 
 	--border-width: 1px; /*sane def 2*/
 	--border-color: var(--bg-3); 
-	--border-hover-color: var(--bg-3); /* (--acc-0 for focus visuals) */
+	--border-hover-color: var(--bg-3); /*--acc-0 for focus visuals*/
 	--border-transition: 0.2s ease; 
 
 	--mention-txt: var(--acc-0); 
 	--mention-bg: color-mix(in oklch, var(--bg-1), transparent 90%);
-  --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); 
+    --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); 
 	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); 
 	--reply-overlay: var(--active);
 	--reply-hover-overlay: var(--hover);
+
+    --display-settings-billing-header: none;       /* Settings menu Billing Settings header */
+    --display-settings-nitro-tab: none;             /* Settings menu Nitro tab */
+    --display-settings-server-boost-tab: none;      /* Settings menu Server Boost tab */
+    --display-settings-subscriptions-tab: none;     /* Settings menu Subscriptions tab */
+    --display-settings-gift-inventory-tab: none;   /* Settings menu Gift Inventory tab */
+    --display-settings-billing-tab: none;           /* Settings menu Billing tab */
 }
+
+/*RM*/
+//user customization
+svg[class^="avatarDecoration"],
+img[class^="avatarDecoration"],
+[class*="bannerSVGWrapper_"] > mask > image { display: none; }
+[class*=avatarDecorationHint_] > foreignObject {
+  width: 80px;
+  height: 80px;
+  mask: url(#svg-mask-avatar-status-round-80);
+}
+[class*=avatarDecorationHint_] {
+  top: -80px;
+  left: 0px;
+  position: relative;
+}
+[class="button_dd4f85 lookBlank_dd4f85 colorBrand_dd4f85 grow_dd4f85"]{ display: none; }
+[class="descriptionClamp_f5f93a"]{ display: none; }
+[class="footer__5be3e"]{ display: none; }
+[class="viewFullBio_f5f93a button__201d5 lookBlank__201d5 viewFullBioColor_f5f93a grow__201d5"]{ display: none; }
+[class="overlay_c0bea0 panel_c0bea0 overlay__747b1"]{ display: none; }
+[class="upsellContent__5997d upsellDefaultContent__5997d"]{ display: none; }
+[class="banner__68edb"]{ display: none; }
+/*server boost*/
+[class="item_c1e9c4 labelContainer_c1e9c4 colorDefault_c1e9c4"]{ display: none; }
+[class="footer__214dc"]{ display: none; }
+[class="searchBar__35e86"]{ display: none; }
+//[class="avatar__20a53"]{ display: none; }
+/*settings*/
+div[role="tablist"] {
+  > div[class*="separator_"]:has(+ div[class*="header_"] + div[class*="premiumTab_"]) { display: var(--display-settings-billing-header); }  /* Seperator */
+  > div[class*="header_"]:has(+ div[class*="premiumTab_"]) { display: var(--display-settings-billing-header); }  /* Billing Settings header */
+  > div[class*="premiumTab_"] { display: var(--display-settings-nitro-tab); } /* Nitro */
+  > div[class*="premiumTab_"] + div { display: var(--display-settings-server-boost-tab); } /* Server Boost */
+  > div[class*="premiumTab_"] + div + div { display: var(--display-settings-subscriptions-tab); } /* Subscriptions */
+  > div[class*="premiumTab_"] + div + div + div { display: var(--display-settings-gift-inventory-tab); }
+  > div[class*="premiumTab_"] + div + div + div + div { display: var(--display-settings-billing-tab); }
+}
+[class="container__8279f"]{ display: none; }
+[class="upsellContainer__0b69f upsellContainerShadow__0b69f upsellContainerFloating__0b69f floatingNitroUpsell__39749"]{ display: none; }
+[class="premiumBackground__65c15 background__65c15"]{ display: none; }
+[class="premiumFeatureBorder__65c15 featureBorder__65c15 tryItOutSection__9d295"]{ display: none; }
+[class="upsellOverlayContainer__0f7dc"]{ display: none; }
+[aria-label="Activity Privacy"]+div{ display: none; }
+[aria-label="Activity Privacy"]+div +div{ display: none; }
+[aria-label="Activity Privacy"]+div +div +div{ display: none; }
+[aria-label="Activity Privacy"]+div +div +div +div{ display: none; }
+[class="socialLinks__7df54"]{ display: none; } //socials
+/*chat buttons*/
+button[aria-label="Open GIF picker"] { display: none; }
+button[aria-label="Send a gift"] { display: none; }
+button[aria-label="Open sticker picker"] { display: none; }
+.channelTextArea-1FufC0 > .container-1ZA19X { display: none; }
+button[aria-label="Boost this server"] { display: none; }
+button[aria-label="Add Emoji Confetti"]{ display: none; }
+button[aria-label="Select emoji"]{ display: none; }
+.footer_aa1bff{ display:none; } //side bar
+div[class^="channelAppLauncher_"] { display: none; }
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"]){ pointer-events: none; }
+div[class^="effectsWrapper"]{ display: none; } //super reactions
+div[class*="shakeReaction"]{ animation: none !important; }
+img.emoji{ opacity: 100; }
+[href="/shop"]{ display: none !important; }
+[href="/store"]{ display:none; }
+/*toolbar*/
+[aria-label="Start Video Call"]{ display: none; }
+[aria-label="Add Friends to DM"]{ display: none; }
+[aria-label="Inbox"]{ display: none; }
+[aria-label="Help"]{ display: none; }
+[class="wrapper__44b0c avatar_f75fb0"]{ display: none; }
+/*loading*/
 
 .theme-dark {
   --background-primary: #0d0d0d;
