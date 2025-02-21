@@ -5,47 +5,47 @@
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css');
 
 :root {
-    --unread-color: #7289da;
-    --chat-buttons: #61538d;
-    --spotify-color: #61538d;
-    --online: #43b581;
-    --iddle: #faa61a;
-    --dnd: #f04747;
-    --offline: #747f8d;
-    --streaming: #593695;
-    --playing: #7289da;
-    --listening: #1db653;
+  --unread-color: #7289da;
+  --chat-buttons: #61538d;
+  --spotify-color: #61538d;
+  --online: #43b581;
+  --iddle: #faa61a;
+  --dnd: #f04747;
+  --offline: #747f8d;
+  --streaming: #593695;
+  --playing: #7289da;
+  --listening: #1db653;
   
-    --disable-animations: 2s channel-unread infinite;
-    --user-buttons-spacing: 8px;
+  --disable-animations: 2s channel-unread infinite;
+  --user-buttons-spacing: 8px;
 
-    --font: 'DM Mono';
-	  letter-spacing: -0.05ch;
-	  font-weight: 300; 	
-    --label-font-weight: 500; 
+  --font: 'DM Mono';
+	letter-spacing: -0.05ch;
+	font-weight: 300; 	
+  --label-font-weight: 500; 
 
-    --pad:10px; /*sane def 15*/
-    --txt-pad: 10px; /*padding inside panels to prevent labels from clipping*/
-    --panel-roundness: 0px;
+  --pad:10px; /*sane def 15*/
+  --txt-pad: 10px; /*padding inside panels to prevent labels from clipping*/
+  --panel-roundness: 0px;
 
-	  --border-width: 1px; /*sane def 2*/
-	  --border-color: var(--bg-3); 
-	  --border-hover-color: var(--bg-3); /*--acc-0 for focus visuals*/
-	  --border-transition: 0.2s ease; 
+  --border-width: 1px; /*sane def 2*/
+	--border-color: var(--bg-3); 
+  --border-hover-color: var(--bg-3); /*--acc-0 for focus visuals*/
+	--border-transition: 0.2s ease; 
 
-	  --mention-txt: var(--acc-0); 
-	  --mention-bg: color-mix(in oklch, var(--bg-1), transparent 90%);
-    --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); 
-	  --mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); 
-	  --reply-overlay: var(--active);
-	  --reply-hover-overlay: var(--hover);
+	--mention-txt: var(--acc-0); 
+	--mention-bg: color-mix(in oklch, var(--bg-1), transparent 90%);
+  --mention-overlay: color-mix(in oklch, var(--bg-1), transparent 90%); 
+	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); 
+	--reply-overlay: var(--active);
+	--reply-hover-overlay: var(--hover);
 
-    --display-settings-billing-header: none;       /* Settings menu Billing Settings header */
-    --display-settings-nitro-tab: none;             /* Settings menu Nitro tab */
-    --display-settings-server-boost-tab: none;      /* Settings menu Server Boost tab */
-    --display-settings-subscriptions-tab: none;     /* Settings menu Subscriptions tab */
-    --display-settings-gift-inventory-tab: none;   /* Settings menu Gift Inventory tab */
-    --display-settings-billing-tab: none;           /* Settings menu Billing tab */
+  --display-settings-billing-header: none;       /* Settings menu Billing Settings header */
+  --display-settings-nitro-tab: none;             /* Settings menu Nitro tab */
+  --display-settings-server-boost-tab: none;      /* Settings menu Server Boost tab */
+  --display-settings-subscriptions-tab: none;     /* Settings menu Subscriptions tab */
+  --display-settings-gift-inventory-tab: none;   /* Settings menu Gift Inventory tab */
+  --display-settings-billing-tab: none;           /* Settings menu Billing tab */
 }
 
 /*remove user customization*/
