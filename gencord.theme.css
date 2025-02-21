@@ -62,6 +62,13 @@ img[class^="avatarDecoration"],
   top: -80px;
   left: 0px;
 }
+[class="banner__68edb banner__537ec"],
+[class="viewFullBio_f5f93a button__201d5 lookBlank__201d5 viewFullBioColor_f5f93a grow__201d5"]{
+  display: none;
+}
+[class="outer_c0bea0 theme-dark images-dark panel_c0bea0"]{
+  background: none;
+}
 /*remove moar elements*/
 [class="footer__214dc"],
 [class="banner__68edb"],
@@ -71,8 +78,7 @@ img[class^="avatarDecoration"],
 [class="overlay_c0bea0 panel_c0bea0 overlay__747b1"],
 [class="upsellContent__5997d upsellDefaultContent__5997d"],
 [class="item_c1e9c4 labelContainer_c1e9c4 colorDefault_c1e9c4"],
-[class="button_dd4f85 lookBlank_dd4f85 colorBrand_dd4f85 grow_dd4f85"],
-[class="viewFullBio_f5f93a button__201d5 lookBlank__201d5 viewFullBioColor_f5f93a grow__201d5"]{ 
+[class="button_dd4f85 lookBlank_dd4f85 colorBrand_dd4f85 grow_dd4f85"]{ 
   display: none; 
 }
 /*chat buttons*/
@@ -143,6 +149,22 @@ div[role="tablist"] {
   background-size: 80%; 
   min-height: 60px;
   min-width: 60px;
+}
+/*user area*/
+[aria-label="User Settings"]{
+  position: relative;
+  right: 256px;
+  bottom: 10px;
+}
+[aria-label="Deafen"]{
+  position: relative;
+  right: 223px;
+  bottom: 45px;
+}
+[aria-label="Mute"]{
+  position: relative;
+  right: 190px;
+  bottom: 80px;
 }
 
 .theme-dark {
