@@ -76,6 +76,7 @@ img[class^="avatarDecoration"],
   background: none;
 }
 /*remove moar elements*/
+[class="avatar__91a9d"], /*avatars in members list*/
 [class="footer__214dc"],
 [class="banner__68edb"],
 [class="footer__5be3e"],
@@ -116,10 +117,11 @@ img.emoji{ opacity: 100; }
   display: none;
 }
 /*main*/
-[class="avatar__20a53"],
+[class="avatar__20a53"], /*avatar and icons in dm list*/
 [class="iconWrapper__9293f"],
 [aria-label="Servers"]+div+div,
 [class="nowPlayingColumn__133bf"],
+[class="wrapper__44b0c avatar__0a06e"],/*avatar in friends list*/
 [class="searchBar__5ec2f container_a45028 medium_a45028"]{
   display: none;
 }
