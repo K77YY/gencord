@@ -27,14 +27,15 @@
 	letter-spacing: -0.05ch;
 	font-weight: 300; 	
   --label-font-weight: 500; 
+  --label-color: #0d0d0d;
 
   --pad:10px; /*sane def 15*/
   --txt-pad: 10px; /*padding inside panels to prevent labels from clipping*/
   --panel-roundness: 0px;
 
   --border-width: 1px; /*sane def 2*/
-	--border-color: var(--bg-3); 
-  --border-hover-color: var(--bg-3); /*--acc-0 for focus visuals*/
+	--border-color: #303030; /*def var(--bg-3) */ 
+  --border-hover-color: #4e4c5a; /*--acc-0 for violet focus visuals*/
 	--border-transition: 0.2s ease; 
 
 	--mention-txt: var(--acc-0); 
@@ -82,6 +83,7 @@ img[class^="avatarDecoration"],
 [class="footer__5be3e"],
 [class="searchBar__35e86"],
 [class="descriptionClamp_f5f93a"],
+[class="closedFolderIconWrapper__48112"],
 [class="overlay_c0bea0 panel_c0bea0 overlay__747b1"],
 [class="upsellContent__5997d upsellDefaultContent__5997d"],
 [class="item_c1e9c4 labelContainer_c1e9c4 colorDefault_c1e9c4"],
@@ -101,12 +103,27 @@ div[class^="channelAppLauncher_"]{
   display: none; 
 }
 div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
-div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"]){ pointer-events: none; }
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"]){ 
+  pointer-events: none; 
+}
 div[class^="effectsWrapper"],
 div[class*="shakeReaction"]{ animation: none !important; }
 img.emoji{ opacity: 100; }
 [href="/shop"]{ display: none !important; }
 [href="/store"]{ display:none; }
+/*quick reactions*/
+[aria-label^="Click to react with"] {
+  display: none;
+}
+[class="buttonsInner__5126c popover_f84418 popoverReactionHoverBar_f84418 wrapper_f7ecac"]{
+  background-color: #0d0d0d;
+  border-color: #303030;
+}
+[aria-label="More"],
+[class="separator_f84418"]{
+  display: none;
+}
+
 /*toolbar*/
 [aria-label="Help"],
 [aria-label="Inbox"],
@@ -116,14 +133,33 @@ img.emoji{ opacity: 100; }
 [class="wrapper__44b0c avatar_f75fb0"]{
   display: none;
 }
-/*main*/
+/*home*/
 [class="avatar__20a53"], /*avatar and icons in dm list*/
+[class="subText__91a9d"],
+[class="subText__20a53"],
+[class="subText__91a9d"],
 [class="iconWrapper__9293f"],
 [aria-label="Servers"]+div+div,
 [class="nowPlayingColumn__133bf"],
 [class="wrapper__44b0c avatar__0a06e"],/*avatar in friends list*/
-[class="searchBar__5ec2f container_a45028 medium_a45028"]{
+[class="searchBar__5ec2f container_a45028 medium_a45028"],
+[class="membersGroup_c8ffbb container__13cf1 text__13cf1"]{
   display: none;
+}
+[class="channel__972a0 dm__972a0 container_e45859"],
+[class="member__5d473 container__91a9d clickable__91a9d"],
+[class="member__5d473 offline__5d473 container__91a9d clickable__91a9d"]{
+  height: 30px; 
+}
+[class="channel__972a0 dm__972a0 container_e45859"]{
+  box-sizing: 1px;
+}
+[class="member__5d473 member_c8ffbb container__91a9d clickable__91a9d"],
+[class="member__5d473 member_c8ffbb offline__5d473 container__91a9d clickable__91a9d"]{
+  height: 32px;
+}
+[aria-label="Add a Server"]{
+  background-color: #0d0d0d;
 }
 /*settings*/
 div[role="tablist"] {
@@ -152,14 +188,15 @@ div[role="tablist"] {
 [class="upsellContainer__0b69f upsellContainerShadow__0b69f upsellContainerFloating__0b69f floatingNitroUpsell__39749"]{ 
   display: none; 
 }
-/*home button*/
+/*servers*/
 .wrapper__6e9f8 selected__6e9f8 .childWrapper__6e9f8, .wrapper__6e9f8 .childWrapper__6e9f8 {
   background: #0d0d0d;
   color: #593695;
   transform: scale(1) translate(1px, 1px);
 }
+/*home button*/
 svg:has(>[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z"]) {
-  background: #0d0d0d;
+  background: #61538d;
   color: transparent;
   transform: scale(10) translate(1px, 5px);
 }
