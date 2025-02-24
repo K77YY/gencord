@@ -5,20 +5,15 @@
 @import url('https://aushevahmad.github.io/awesome-css/modules/compressbotmsgs.css');
 @import url('https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css');
 @import url('https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css');
-@import url('https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css');
-@import url('https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css');
 
 :root {
   --unread-color: #7289da;
   --chat-buttons: #61538d;
-  --spotify-color: #61538d;
   --online: #43b581;
   --iddle: #faa61a;
   --dnd: #f04747;
   --offline: #747f8d;
-  --streaming: #593695;
-  --playing: #7289da;
-  --listening: #1db653;
+  --status-danger: #593695;
   
   --disable-animations: 2s channel-unread infinite;
   --user-buttons-spacing: 8px;
@@ -45,12 +40,13 @@
 	--reply-overlay: var(--active);
 	--reply-hover-overlay: var(--hover);
 
+  /*settings
   --display-settings-billing-header: none;     
   --display-settings-nitro-tab: none;            
   --display-settings-server-boost-tab: none; 
   --display-settings-subscriptions-tab: none;    
   --display-settings-gift-inventory-tab: none; 
-  --display-settings-billing-tab: none;           
+  --display-settings-billing-tab: none;          */ 
 
   --prompt-text: " ";
 }
@@ -69,38 +65,8 @@ img[class^="avatarDecoration"],
   top: -80px;
   left: 0px;
 }
-[class="banner__68edb banner__537ec"],
-[class="viewFullBio_f5f93a button__201d5 lookBlank__201d5 viewFullBioColor_f5f93a grow__201d5"]{
-  display: none;
-}
 [class="outer_c0bea0 theme-dark images-dark panel_c0bea0"]{
   background: none;
-}
-/*remove moar elements*/
-[class="avatar__91a9d"], /*avatars in members list*/
-[class="footer__214dc"],
-[class="banner__68edb"],
-[class="footer__5be3e"],
-[class="searchBar__35e86"],
-[class="descriptionClamp_f5f93a"],
-[class="closedFolderIconWrapper__48112"],
-[class="overlay_c0bea0 panel_c0bea0 overlay__747b1"],
-[class="upsellContent__5997d upsellDefaultContent__5997d"],
-[class="item_c1e9c4 labelContainer_c1e9c4 colorDefault_c1e9c4"],
-[class="button_dd4f85 lookBlank_dd4f85 colorBrand_dd4f85 grow_dd4f85"]{ 
-  display: none; 
-}
-/*chat buttons*/
-button[aria-label="Open GIF picker"],
-button[aria-label="Send a gift"],
-button[aria-label="Open sticker picker"],
-button[aria-label="Boost this server"],
-button[aria-label="Add Emoji Confetti"],
-button[aria-label="Select emoji"],
-.channelTextArea-1FufC0 > .container-1ZA19X,
-.footer_aa1bff,
-div[class^="channelAppLauncher_"]{ 
-  display: none; 
 }
 div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
 div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"]){ 
@@ -109,44 +75,15 @@ div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boo
 div[class^="effectsWrapper"],
 div[class*="shakeReaction"]{ animation: none !important; }
 img.emoji{ opacity: 100; }
-[href="/shop"]{ display: none !important; }
-[href="/store"]{ display:none; }
 /*quick reactions*/
-[aria-label^="Click to react with"] {
-  display: none;
-}
 [class="buttonsInner__5126c popover_f84418 popoverReactionHoverBar_f84418 wrapper_f7ecac"]{
   background-color: #0d0d0d;
   border-color: #303030;
 }
-[aria-label="More"],
-[class="separator_f84418"]{
-  display: none;
+[class="newMessagesBar__0f481 barBase__0f481"]{
+  background-color: #593695;
 }
-
 /*toolbar*/
-[aria-label="Help"],
-[aria-label="Inbox"],
-[aria-label="Vencord Toolbox"],
-[aria-label="Start Video Call"],
-[aria-label="Add Friends to DM"],
-[class="wrapper__44b0c avatar_f75fb0"]{
-  display: none;
-}
-/*home*/
-[class="avatar__20a53"], /*avatar and icons in dm list*/
-[class="subText__91a9d"],
-[class="subText__20a53"],
-[class="subText__91a9d"],
-[class="subtext__0a06e"],
-[class="iconWrapper__9293f"],
-[aria-label="Servers"]+div+div,
-[class="nowPlayingColumn__133bf"],
-[class="wrapper__44b0c avatar__0a06e"],/*avatar in friends list*/
-[class="searchBar__5ec2f container_a45028 medium_a45028"],
-[class="membersGroup_c8ffbb container__13cf1 text__13cf1"]{
-  display: none;
-}
 [class="channel__972a0 dm__972a0 container_e45859"],
 [class="member__5d473 container__91a9d clickable__91a9d"],
 [class="member__5d473 offline__5d473 container__91a9d clickable__91a9d"]{
@@ -161,33 +98,6 @@ img.emoji{ opacity: 100; }
 }
 [aria-label="Add a Server"]{
   background-color: #0d0d0d;
-}
-/*settings*/
-div[role="tablist"] {
-  > div[class*="separator_"]:has(+ div[class*="header_"] + div[class*="premiumTab_"]) { display: var(--display-settings-billing-header); } 
-  > div[class*="header_"]:has(+ div[class*="premiumTab_"]) { display: var(--display-settings-billing-header); } 
-  > div[class*="premiumTab_"] { display: var(--display-settings-nitro-tab); } 
-  > div[class*="premiumTab_"] + div { display: var(--display-settings-server-boost-tab); } 
-  > div[class*="premiumTab_"] + div + div { display: var(--display-settings-subscriptions-tab); }
-  > div[class*="premiumTab_"] + div + div + div { display: var(--display-settings-gift-inventory-tab); }
-  > div[class*="premiumTab_"] + div + div + div + div { display: var(--display-settings-billing-tab); }
-}
-[aria-label="Clips"],
-[aria-label="Connections"],
-[aria-label="Activity Privacy"]+div,
-[aria-label="Activity Privacy"]+div +div,
-[aria-label="Activity Privacy"]+div +div +div,
-[aria-label="Activity Privacy"]+div +div +div +div,
-[class="container__8279f"],
-[class="socialLinks__7df54"],
-[class="upsellOverlayContainer__0f7dc"],
-[class="item_b3f026 selected_b3f026 themed_b3f026"],
-[class="premiumBackground__65c15 background__65c15"],
-[class="h5_b717a1 eyebrow_b717a1 defaultMarginh5_b717a1"],
-[class="vc-special-card vc-special-card-special cardPrimary__73069 card__73069"],
-[class="premiumFeatureBorder__65c15 featureBorder__65c15 tryItOutSection__9d295"],
-[class="upsellContainer__0b69f upsellContainerShadow__0b69f upsellContainerFloating__0b69f floatingNitroUpsell__39749"]{ 
-  display: none; 
 }
 /*servers*/
 .wrapper__6e9f8 selected__6e9f8 .childWrapper__6e9f8, .wrapper__6e9f8 .childWrapper__6e9f8 {
@@ -216,6 +126,89 @@ svg:has(>[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-
   position: relative;
   right: 190px;
   bottom: 80px;
+}
+/*settings*/
+div[role="tablist"] {
+  > div[class*="separator_"]:has(+ div[class*="header_"] + div[class*="premiumTab_"]),
+  > div[class*="header_"]:has(+ div[class*="premiumTab_"]),
+  > div[class*="premiumTab_"],
+  > div[class*="premiumTab_"] + div,
+  > div[class*="premiumTab_"] + div + div,
+  > div[class*="premiumTab_"] + div + div + div,
+  > div[class*="premiumTab_"] + div + div + div + div {
+    display: none;
+  }
+}
+/*remove moar elements*/
+[class="avatar__91a9d"], /*avatars in members list*/
+[class="footer__214dc"],
+[class="banner__68edb"],
+[class="footer__5be3e"],
+[class="searchBar__35e86"],
+[class="descriptionClamp_f5f93a"],
+[class="closedFolderIconWrapper__48112"],
+[id="message-accessories-1342414185513881651"], /*embed*/
+[class="overlay_c0bea0 panel_c0bea0 overlay__747b1"],
+[class="upsellContent__5997d upsellDefaultContent__5997d"],
+[class="item_c1e9c4 labelContainer_c1e9c4 colorDefault_c1e9c4"],
+[class="button_dd4f85 lookBlank_dd4f85 colorBrand_dd4f85 grow_dd4f85"],
+[class="embedWrapper_b7e1cb embedFlexGrow_b7e1cb embedFull__623de embed__623de markup__75297 justifyAuto__623de"], /*embed*/
+/*user customization*/
+[class="banner__68edb banner__537ec"],
+[class="viewFullBio_f5f93a button__201d5 lookBlank__201d5 viewFullBioColor_f5f93a grow__201d5"],
+[href="/shop"],
+[href="/store"],
+/*quick reactions*/
+[aria-label="More"],
+[aria-label="Forward"],
+[class="separator_f84418"],
+[aria-label^="Click to react with"], 
+/*home*/
+[class="avatar__20a53"], /*avatar and icons in dm list*/
+[class="subText__91a9d"],
+[class="subText__20a53"],
+[class="subText__91a9d"],
+[class="subtext__0a06e"],
+[class="iconWrapper__9293f"],
+[aria-label="Servers"]+div+div,
+[class="nowPlayingColumn__133bf"],
+[class="wrapper__44b0c avatar__0a06e"],/*avatar in friends list*/
+[class="searchBar__5ec2f container_a45028 medium_a45028"],
+[class="membersGroup_c8ffbb container__13cf1 text__13cf1"],
+/*toolbar*/
+[aria-label="Help"],
+[aria-label="Inbox"],
+[aria-label="Vencord Toolbox"],
+[aria-label="Start Video Call"],
+[aria-label="Add Friends to DM"],
+[class="wrapper__44b0c avatar_f75fb0"],
+/*settings*/
+[aria-label="Clips"],
+[aria-label="Connections"],
+[aria-label="Activity Privacy"]+div,
+[aria-label="Activity Privacy"]+div +div,
+[aria-label="Activity Privacy"]+div +div +div,
+[aria-label="Activity Privacy"]+div +div +div +div,
+[class="container__8279f"],
+[class="socialLinks__7df54"],
+[class="upsellOverlayContainer__0f7dc"],
+[class="item_b3f026 selected_b3f026 themed_b3f026"],
+[class="premiumBackground__65c15 background__65c15"],
+[class="h5_b717a1 eyebrow_b717a1 defaultMarginh5_b717a1"],
+[class="vc-special-card vc-special-card-special cardPrimary__73069 card__73069"],
+[class="premiumFeatureBorder__65c15 featureBorder__65c15 tryItOutSection__9d295"],
+[class="upsellContainer__0b69f upsellContainerShadow__0b69f upsellContainerFloating__0b69f floatingNitroUpsell__39749"],
+/*chat buttons*/
+button[aria-label="Open GIF picker"],
+button[aria-label="Send a gift"],
+button[aria-label="Open sticker picker"],
+button[aria-label="Boost this server"],
+button[aria-label="Add Emoji Confetti"],
+button[aria-label="Select emoji"],
+.channelTextArea-1FufC0 > .container-1ZA19X,
+.footer_aa1bff,
+div[class^="channelAppLauncher_"]{ 
+  display: none !important; 
 }
 
 .theme-dark {
